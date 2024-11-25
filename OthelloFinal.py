@@ -277,7 +277,8 @@ class Bot:
 
     # BOT FUNCTIONS
 
-    def check_valid_moves(self):
+    def check_valid_moves(self, bb):
+        bb.board
         print("Il faut récupérer toutes les cases du tableau")
         print("Vérifier quels coups sont jouables")
         print("Et renvoyer les coordonnées")
@@ -301,8 +302,7 @@ while not othello_game.is_game_over:
     # First player / bot logic goes here
     if (othello_game.active_player == "⚫"):
         move_coordinates = [0, 0]
-        move_coordinates[0] = int(input("Coordonnées en X: "))
-        move_coordinates[1] = int(input("Coordonnées en Y: "))
+        move_coordinates = myBot.check_valid_moves(othello_board)
         othello_game.place_pawn(
             move_coordinates[0], move_coordinates[1], othello_board, othello_game.active_player)
 
