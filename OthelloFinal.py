@@ -277,12 +277,12 @@ class Bot:
 
     # BOT FUNCTIONS
 
-    def check_valid_moves(self, bb):
-        bb.board
+    def check_valid_moves(self,board):
+        for current_tile in board.board:
+            board.is_legal_move(current_tile.x_pos ,current_tile.y_pos, "⚫")
         print("Il faut récupérer toutes les cases du tableau")
         print("Vérifier quels coups sont jouables")
         print("Et renvoyer les coordonnées")
-
 # Create a new board & a new game instances
 othello_board = Board(8)
 othello_game = Game()
