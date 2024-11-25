@@ -282,7 +282,6 @@ class Bot:
         print("Il faut récupérer toutes les cases du tableau")
         print("Vérifier quels coups sont jouables")
         print("Et renvoyer les coordonnées")
-
 # Create a new board & a new game instances
 othello_board = Board(8)
 othello_game = Game()
