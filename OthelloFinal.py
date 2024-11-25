@@ -277,9 +277,8 @@ class Bot:
 
     # BOT FUNCTIONS
 
-    def check_valid_moves(self, board):
-        for current_title in board.board:
-            for current_tile in board.board:
+     def check_valid_moves(self,board):
+        for current_tile in board.board:
             board.is_legal_move(current_tile.x_pos ,current_tile.y_pos, "⚫")
         print("Il faut récupérer toutes les cases du tableau")
         print("Vérifier quels coups sont jouables")
