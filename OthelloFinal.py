@@ -279,8 +279,8 @@ class Bot:
 
     def check_valid_moves(self, board):
         for current_title in board.board:
-            # current_title.x_pos
-            board.is_legal_move(x.pos, y.pos, color)
+            for current_tile in board.board:
+            board.is_legal_move(current_tile.x_pos ,current_tile.y_pos, "⚫")
         print("Il faut récupérer toutes les cases du tableau")
         print("Vérifier quels coups sont jouables")
         print("Et renvoyer les coordonnées")
